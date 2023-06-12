@@ -15,7 +15,6 @@ const connectDB = async () =>{
     }
 }
 
-let obj = []
-console.log(typeof obj)
+
 
 module.exports = connectDB
