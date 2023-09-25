@@ -6,8 +6,9 @@ const RegistrationValidation =  {
         Email    : Joi.string().email().required(),
         phoneNumber: Joi.string().required(),
         password : Joi.string().pattern(new RegExp("^[a-zA-Z0-9@]{3,30}$")).required(),
-        confirmpassword: Joi.string().pattern(new RegExp("^[a-zA-Z0-9@]{3,30}$")).required()
-    })
+        confirmpassword: Joi.string().pattern(new RegExp("^[a-zA-Z0-9@]{3,30}$")).required(),
+        Gender: Joi.string().valid('male','female').insensitive().required(), 
+       })
 }
 
 const LoginValidation = {

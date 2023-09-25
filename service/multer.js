@@ -20,9 +20,7 @@ const upload = multer({
             next(null, file.mimetype.split('/')[0].toLowerCase() + '_' + randomString() + '_' + Date.now() + path.extname(file.originalname).toLowerCase());
         }
     }),
-    limits: { fileSize: 104857600 },
+    limits: { fileSize: 104857600 }
 })
-
-
 
 module.exports = { upload };
