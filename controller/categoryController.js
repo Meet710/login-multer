@@ -7,7 +7,7 @@ const AddCategory = async(req, res ,next)=>{
         const category = new CATEGORY({
         name : req.body.name
         })
-        await category.save()
+      await  category.save()
         res.status(200).send("Category Sucessfully Added")
     
     } catch (error) {

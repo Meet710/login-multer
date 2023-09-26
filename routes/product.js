@@ -5,4 +5,4 @@ const { upload } = require('../service/multer')
 
 router.post('/AddProduct' , upload.single("photo") ,AddProduct)
 router.patch('/editProduct/:id',upload.single("photo"),editProduct )
-module.export = router
+module.exports = router

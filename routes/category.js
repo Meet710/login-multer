@@ -3,6 +3,6 @@
  const {AddCategory} = require('../controller/categoryController')
  
 router.post('/addCategory' , AddCategory)
- module.exports =router
+ module.exports = router
 
 

@@ -51,7 +51,7 @@ const editProduct = async(req, res , next) =>{
     if(!updateProduct) {
       return  res.status(400).send("Error while updating product")
     }
-    res.status(200).send(updateProduct)
+    res.status(200).send("Product Updated")
   } catch (error) {
     next(error) 
   }

@@ -9,4 +9,4 @@ const ProductSchema = new mongoose. Schema({
     InStock     :{type : Boolean, default:false ,lowercase : true}
 })
 
-module.exports= new  mongoose.model("product",ProductSchema)
+module.exports= new  mongoose.model('product', ProductSchema)
