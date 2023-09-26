@@ -44,7 +44,7 @@ const editProduct = async(req, res , next) =>{
       category : findCategory._id,
       photo,
       price,
-      InStock,
+      InStock
     }
     if (photo) update.photo =photo.filename
     const updateProduct  = await PRODUCT.findByIdAndUpdate(_id, { $set: update },{new: true})

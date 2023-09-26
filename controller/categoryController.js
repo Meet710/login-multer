@@ -1,11 +1,5 @@
 const CATEGORY = require('../model/category')
-/**
- * 
- * @param {*} req for request
- * @param {*} res for response
- * @param {*} next for next middlware
- * @returns 
- */
+
 const AddCategory = async(req, res ,next)=>{
     try {
         const findCategory= await CATEGORY.findOne({name : req.body.name})
