@@ -56,5 +56,4 @@ const editProduct = async(req, res , next) =>{
     next(error) 
   }
 }
-module.exports = { AddProduct,editProduct }
-
+module.exports = { AddProduct , editProduct}

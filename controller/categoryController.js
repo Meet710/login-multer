@@ -16,4 +16,4 @@ const AddCategory = async(req, res ,next)=>{
 
 }
 
-module.exports=  {  AddCategory  }
+module.exports={AddCategory}; 
